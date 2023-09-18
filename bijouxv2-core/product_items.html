@@ -23,6 +23,7 @@
                 <!--START: product_review-->
                 <!--START: product_review_average-->
                 <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+                <style>.rev-[catalogid]{display:block !important}</style>
                 <!--END: product_review_average-->
                 <!--END: product_review-->
             </div>
@@ -36,12 +37,8 @@
 			<a href="product.asp?itemid=[catalogid]">[name]</a>
 		</div>
 		
-		<div class="reviews hidden-lg">
-            <!--START: product_review-->
-            <!--START: product_review_average-->
+		<div class="reviews hidden-lg rev-[catalogid]">
             <span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
-            <!--END: product_review_average-->
-            <!--END: product_review-->
         </div>
 		
 		<div class="desc">[description]</div>
@@ -125,3 +122,4 @@
 	}
 </script>
 <!--END: previouslybought_scripts-->
+<style>.rev-[catalogid]{display:none;}</style>
