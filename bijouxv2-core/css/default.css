@@ -18,7 +18,9 @@ body *:focus-visible {
 footer {
 	flex-shrink: 0;
 }
-
+#dropdown-cart section.category-related {
+    display: none;
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
